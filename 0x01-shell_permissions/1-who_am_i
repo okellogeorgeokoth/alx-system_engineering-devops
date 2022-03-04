@@ -1,5 +1,2 @@
 #!/bin/bash
-whoami
-echo "$USER"
-my variable=$(whoami)
-myvariable=$USER
+root
