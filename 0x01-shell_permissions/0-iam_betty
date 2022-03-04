@@ -1,2 +1,2 @@
-chmod +x betty
-su betty
+#!/bin/bash
+chmod +x betty su betty
