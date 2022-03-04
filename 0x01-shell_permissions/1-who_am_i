@@ -1,2 +1,5 @@
 #!/bin/bash
-r00t
+whoami
+echo "$USER"
+my variable=$(whoami)
+myvariable=$USER
