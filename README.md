@@ -1,2 +1,2 @@
-#!bin/bash describes the first line of all files
-pwd /n shows the working directiory
+# alx-system_engineering-devops
+Learning Software Engineering
