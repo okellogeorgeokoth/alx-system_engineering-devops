@@ -1,6 +1,6 @@
-#Fix error with strace command and fix it and automate using Puppet
-
-file { '/var/www/html/wp-includes/class-wp-locale.phpp':
-  ensure => file,
-  source => '/var/www/html/wp-includes/class-wp-locale.php',
+# fixes Apache 500 error by fixing typo in wordpress
+exec { 'fix typo':
+  onlyif  => 'test -e /var/www/html/wp-settings.php',
+  command => "sed -i 's/phpp/php/' /var/www/html/wp-settings.php",
+  path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
